@@ -1,0 +1,27 @@
+{
+  "name": "@compendia/concierge",
+  "author": "Dean van Dugteren (dean@compendia.org)",
+  "version": "1.0.0",
+  "description": "An API for seeding and managing a Compendia Network database.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@nosplatform/orbitdb-nos-identity-provider": "^1.0.3",
+    "ajv": "^6.12.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "got": "^11.8.1",
+    "ipfs": "^0.61.0",
+    "libp2p-webrtc-star": "^0.25.0",
+    "libp2p-websockets": "^0.16.2",
+    "orbit-db": "^0.28.0",
+    "secp256k1": "3.6.2",
+    "wrtc": "^0.4.7"
+  },
+  "license": "MIT"
+}
