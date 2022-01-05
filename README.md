@@ -43,12 +43,15 @@ nano .env
 5. Install dependencies:
 
 ```bash
+sudo apt install build-essential
+npm install -g node-gyp
 npm install
 ```
 
 6. Start the server with pm2 so it stays online consistently (change name to something recognizable):
 
 ```bash
+npm install -g pm2
 pm2 start index.js --name concierge
 ```
 
