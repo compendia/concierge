@@ -2,9 +2,11 @@
 <img src="https://i.imgur.com/1uDh3OD.png" width="250px">
 </p>
 
-Concierge is an API to manage your Compendia database. It acts as an [OrbitDB](https://github.com/orbitdb/orbit-db) node and CRUD API.
+Concierge is an API to manage your Compendia Layer 2 Database. It acts as an [OrbitDB](https://github.com/orbitdb/orbit-db) node and CRUD API.
 
-When you first run Concierge after configuring your env file, you'll get the multihash address (i.e. `/orbitdb/foo/bar`) that you can register in Compendia from the Tools section in the [web wallet](https://wallet-staging.compendia.org).
+When you first run Concierge after configuring your env file, you'll get the multihash address (i.e. `/orbitdb/foo/bar`) that you can register in Compendia from the Tools section in the [testnet web wallet](https://wallet.nos.dev).
+
+[Click here](https://docs.compendia.org/guide/databases.html) for a full guide on Compendia Databases.
 
 ## API
 
@@ -41,12 +43,15 @@ nano .env
 5. Install dependencies:
 
 ```bash
+sudo apt install build-essential
+npm install -g node-gyp
 npm install
 ```
 
 6. Start the server with pm2 so it stays online consistently (change name to something recognizable):
 
 ```bash
+npm install -g pm2
 pm2 start index.js --name concierge
 ```
 
