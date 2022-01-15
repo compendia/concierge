@@ -71,7 +71,7 @@ initIPFSInstance().then(async ipfs => {
 
   const db = await orbitdb.docs(process.env.SCHEMA, options);
   await db.load();
-  console.log("Database address: " + db.address);
+  console.log("Database hash: " + String(db.address).replace("/orbitdb/", "").replace(`/${schemaKey}`, ""));
 
   app.use('/', auth);
 
