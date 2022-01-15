@@ -46,6 +46,7 @@ nano .env
 sudo apt install build-essential
 npm install -g node-gyp
 npm install
+npm install --save blockstore-core@1.0.2
 ```
 
 6. Start the server with pm2 so it stays online consistently (change name to something recognizable):
